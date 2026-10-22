@@ -1,0 +1,92 @@
+body{
+    background-color: #101010;
+    font-family: "Bricolage Grotesque", sans-serif;
+    color: #F1F1EC;
+    /*font-optical-sizing: auto;*/
+    /*font-weight: <weight>;*/
+    /*font-style: normal;*/
+    /*font-variation-settings:*/
+    /*        "wdth" 100;*/
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    border-bottom: 0.5px solid rgb(145, 145, 145);
+    width: 100%;
+    height: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #101010;
+}
+
+.navbar h1{
+    color: #F1F1EC;
+    font-size: 2vw;
+}
+
+.buttons button{
+    background: none;
+    color: rgb(145, 145, 145);
+    border: none;
+    padding: 0 10px;
+    margin: 0 5px;
+    cursor: pointer;
+
+}
+#resume-button{
+    border: 1px solid rgb(215, 215, 215);
+    border-radius: 100px;
+    padding: 10px 20px;
+    background-color: #F1F1EC;
+    color: #101010;
+    font-weight: 700;
+}
+.hero{
+    width: 100%;
+    height: 80vh;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.hero-left{
+    width: 50%;
+    /* background-color: green; */
+}
+.hero-left p{
+    padding-left: 5vw;
+    margin-top: 5vw;
+    font-size: 9vw;
+    font-weight: 800;
+    line-height: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: -4px;
+}
+.hero-left p span{
+    border: 5px solid #F1F1EC;
+    border-radius: 100px;
+    padding: 0 20px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    display: inline-block;
+}
+#cursor{
+    all: unset;
+    color: rgb(252, 214, 1);
+    animation: blink 1.1s step-start infinite;
+}
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0; }
+}
+.hero-right{
+    width: 50%;
+    /* background-color: red; */
+}
